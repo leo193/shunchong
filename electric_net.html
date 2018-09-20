@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shunchong.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<title>充电网络</title>
+		<script type="text/javascript">
+			$(function(){
+				
+				//手风琴效果
+				$(".area").click(function(){
+					if($(this).hasClass("active")){
+						$(this).removeClass("active");
+						$(this).next('li').slideUp(500);
+					}else{
+					$(this).addClass('active').siblings().removeClass("active");
+					$(this).siblings('.xx_net').slideUp(500);
+					$(this).next('li').slideDown(500);}
+				})
+				
+				
+				//关闭二维码
+				$("#close_er").click(function(){
+					$(".er").hide();
+				})
+			
+			})
+		</script>
+		<!--[if lte IE 8]><script>window.location.href='ie_error.html'</script><![endif]-->
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_top">
+				<a href="index.html" class="logo"><img src="images/logo.png"/></a>
+				<ul class="search clearfix">
+					<li class="first"><input type="text" name="" id="" value="" placeholder="搜索..." /></li>
+					<li class="second"><input type="submit" id="" value="" /></li>
+				</ul>
+				<div class="header_top_right">
+					<a href="#">顺充电桩管理平台</a>
+				</div>
+			</div>
+			<ul class="header_bottom clearfix">
+				<li><a href="index.html">网站首页</a></li>
+				<li><a href="product.html">产品介绍</a></li>
+				<li><a href="case.html">项目案例</a></li>
+				<li class="active"><a href="electric_net.html">充电网络</a></li>
+				<li><a href="news.html">新闻中心</a></li>
+				<li><a href="intro.html">关于我们</a></li>
+				<li><a href="contact_us.html">联系我们</a></li>
+			</ul>
+		</div>
+		<div class="news_content clearfix">
+			<div class="electric_left">
+				<div class="electric_left_top">
+					<img src="images/green_left.png"/>
+					<span>充电网络</span>
+				</div>
+				<!--区域选择-->
+				<ul class="electric_left_content">
+					<li class="area">黄浦区</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号111</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">徐汇</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号222</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">长宁</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号333</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">静安</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号444</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">普陀</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号555</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">虹口</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号666</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">杨浦</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号777</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+					<li class="area">闵行</li>
+					<li class="xx_net">
+						<div class="items">
+							<p class="header1">长寿路523号888</p>
+							<p>地址：长寿路523号</p>
+							<p>类型：公共 / 1个慢充 /1个快充</p>
+							<p>状态：<span>无空闲桩</span></p>
+						</div>
+						<div class="items">
+							<p class="header1">昌化路198号</p>
+							<p>地址：昌化路198号</p>
+							<p>类型：个人 / 0个慢充 / 2个快充</p>
+							<p>状态：<span class="have">有空闲桩</span></p>
+						</div>
+					</li>
+				</ul>
+				
+				<!--区域翻页-->
+				<ul class="clearfix area_ul">
+					<li style="margin-right: 16px;"><img src="images/ll.png"/></li>
+					<li class="num active">1</li>
+					<li class="num">2</li>
+					<li class="num">3</li>
+					<li style="margin-left: 11px;"><img src="images/rr.png"/></li>
+				</ul>
+			</div>
+			
+			<div class="electric_right">
+				<ul class="clearfix electric_right_top">
+					<li>
+						<select name="">
+							<option value="">请选择所在城市</option>
+							<option value="">北京</option>
+							<option value="">上海</option>
+							<option value="">苏州</option>
+							<option value="">吉林</option>
+						</select>
+					</li>
+					<li>
+						<select name="">
+							<option value="">请选择所在区县</option>
+							<option value="">徐汇</option>
+							<option value="">南汇</option>
+							<option value="">杨浦</option>
+							<option value="">松江</option>
+						</select>
+					</li>
+					<li>
+						<select name="">
+							<option value="">筛选</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+					</li>
+					<li style="margin-right: -20px;width: 110px;background:#008339 ;">
+						<div class="search">
+							搜&nbsp;索
+						</div>
+					</li>
+				</ul>
+				
+				<!--地图-->
+				<div class="map">
+					<img src="images/map.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer_top">
+				<div class="content clearfix">
+					<ul class="product">
+						<li class="first">产品介绍</li>
+						<li><a href="product.html">充电桩销售</a></li>
+						<li><a href="product02.html">充电桩运营</a></li>
+						<li><a href="product03.html">充电平台运营</a></li>
+						<li><a href="product04.html">新能源汽车销售</a></li>
+						<li><a href="product05.html">新能源汽车租赁</a></li>
+						<li><a href="product06.html">新能源汽车运营</a></li>
+					</ul>
+					<ul class="product" style="width: 170px;">
+						<li class="first">新闻中心</li>
+						<li><a href="news02.html">公司动态</a></li>
+						<li><a href="news.html">行业观察</a></li>	
+					</ul>
+					<ul class="product">
+						<li class="first">关于我们</li>
+						<li><a href="intro.html">关于顺充</a></li>
+						<li><a href="talent.html">公司资质</a></li>
+						<li><a href="partner.html">合作伙伴</a></li>
+					</ul>
+					<ul class="product_r">
+						<li class="first">联系我们</li>
+						<li style="font-size: 14px;"><a href="javascript:;">顺充（上海）新能源科技有限公司</a></li>
+						<li><a href="javascript:;">Shuncharge (shanghai) New Energy Technology Co. Ltd.</a></li>
+						<li><a href="javascript:;">上海市闵行区园文路28号1510室（金源中心 ）:<span>ADD/地址</span></a></li>
+						<li><a href="javascript:;">021-6488 6066 :<span>TEL/电话</span></a></li>
+						<li><a href="javascript:;">sales@shuncharge.com  :<span>EMAIL/邮箱</span></a></li>
+						<li><a href="javascript:;">www.shuncharge.com :<span>SITE/网址</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				Copyright © 2015-2016  顺充（上海）新能源科技有限公司   All rights reserved
+			</div>
+		</div>
+		
+		<!--二维码悬浮-->
+		<div class="er" >
+			<div style="position:relative">
+				<div style="border: 1px solid #DCDCDC;position:absolute;font-size: 12px;color:#DCDCDC;right:-6px;top:-16px;cursor: pointer;" id="close_er">
+					<span>关闭</span>
+					<img src="images/c1_01.png" style="width: 10px;height:10px;display: inline-block;padding-right: 4px;"/>
+				</div>
+				<img src="images/er.jpg"/>
+				<p>顺充新能源</p>
+			</div>
+			
+		</div>
+</html>
